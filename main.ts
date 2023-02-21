@@ -1,3 +1,26 @@
+input.onGesture(Gesture.LogoDown, function () {
+    basic.showLeds(`
+        . . . . .
+        # . . . #
+        . # # # .
+        . . . . .
+        . # . # .
+        `)
+    basic.showLeds(`
+        . # # # #
+        . # . . #
+        # # # . #
+        . # . . #
+        . . . # #
+        `)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+})
 input.onGesture(Gesture.ScreenDown, function () {
     basic.showString("Im a AI")
     basic.showLeds(`
@@ -119,7 +142,10 @@ input.onGesture(Gesture.Shake, function () {
         . # . # .
         # . # . #
         `)
+    basic.pause(100)
     basic.clearScreen()
+})
+input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
         . . # . .
         # . # . #
@@ -128,21 +154,44 @@ input.onGesture(Gesture.Shake, function () {
         . # # # .
         `)
     basic.showLeds(`
-        . . . # .
-        . . . . #
-        # . . . #
+        . . . . .
+        # . # . #
+        # . # . #
         # . . . #
         . # # # .
         `)
     basic.showLeds(`
-        . . # # .
-        . . . . #
-        . . . . #
+        . . . . .
+        . . . . .
+        # . # . .
         # . . . #
         . # # # .
         `)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        # . . . #
+        . # # # .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . # # # .
+        `)
     basic.clearScreen()
-    music.playTone(349, music.beat(BeatFraction.Double))
+    music.playMelody("D D D - - - - - ", 120)
+    basic.pause(100)
+    basic.showLeds(`
+        . . # . .
+        # . # . #
+        # . # . #
+        # . . . #
+        . # # # .
+        `)
+    music.playTone(294, music.beat(BeatFraction.Whole))
     serial.redirectToUSB()
 })
 input.onButtonPressed(Button.B, function () {

@@ -79,13 +79,6 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
-        # # # # .
-        # . # . #
-        # . # # #
-        # . . . #
-        # # # # #
-        `)
-    basic.showLeds(`
         # # . . #
         # # . # .
         . . # . .
@@ -114,7 +107,7 @@ input.onButtonPressed(Button.B, function () {
         . . . . .
         `)
     _1 = 0
-    _1 = randint(1, 2)
+    _1 = randint(1, 3)
     if (_1 == 1) {
         basic.showLeds(`
             # # . . #
@@ -148,20 +141,6 @@ input.onButtonPressed(Button.B, function () {
         . . . . .
         . . . . .
         `)
-    basic.showLeds(`
-        # # . . .
-        # # . . .
-        # # # # .
-        # # # # .
-        # # # # .
-        `)
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
 })
 let _1 = 0
 basic.showLeds(`
@@ -185,6 +164,7 @@ basic.showLeds(`
     # # # . #
     # . # . #
     `)
+basic.pause(100)
 basic.showLeds(`
     . . . . .
     # . . . #
@@ -192,6 +172,7 @@ basic.showLeds(`
     # . # . #
     # . # . #
     `)
+basic.pause(100)
 basic.showLeds(`
     . . . . .
     . . . . .

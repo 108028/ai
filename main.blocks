@@ -76,13 +76,13 @@
         # . . . # 
         # . # # # 
         . # . . .
-        `</field><next><block type="device_show_leds" id="*f=6.Q%faPncGR`Our.!"><field name="LEDS">`
+        `</field><next><block type="device_pause" id="t+={BHd-f)[ow%{*[uO%"><value name="pause"><shadow type="timePicker" id="IZfi:+DU~#tfnOEO%824"><field name="ms">100</field></shadow></value><next><block type="device_show_leds" id="*f=6.Q%faPncGR`Our.!"><field name="LEDS">`
         . # # . . 
         # . . # . 
         . . # . . 
         . . . . . 
         . . # . .
-        `</field><next><block type="device_clear_display" id="vp%`]/w}:cD~hV1Yp%#%"></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="device_forever" id="A#~fIaS-0Hr0nLH3FHKP" x="0" y="0"></block><block type="device_gesture_event" id=":G[PC,Dx+@4.$h^Gj6p6" x="551" y="122"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="device_show_leds" id=":IpF`Ir0bT/J_sjT|p~R"><field name="LEDS">`
+        `</field><next><block type="device_clear_display" id="vp%`]/w}:cD~hV1Yp%#%"></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="device_forever" id="A#~fIaS-0Hr0nLH3FHKP" x="0" y="0"></block><block type="device_gesture_event" id=":G[PC,Dx+@4.$h^Gj6p6" x="551" y="122"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="device_show_leds" id=":IpF`Ir0bT/J_sjT|p~R"><field name="LEDS">`
         . . . . . 
         . # . # . 
         . . . . . 

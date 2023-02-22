@@ -51,6 +51,7 @@ input.onGesture(Gesture.ScreenDown, function () {
         . . . . .
         . . # . .
         `)
+    basic.clearScreen()
 })
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
@@ -59,6 +60,22 @@ input.onButtonPressed(Button.A, function () {
         . # . . .
         # # . . .
         # # . . .
+        `)
+    basic.showNumber(0)
+    basic.showLeds(`
+        . # . . .
+        # . . # #
+        . # . # .
+        # . . # #
+        # # # . .
+        `)
+    basic.showString("GND")
+    basic.showLeds(`
+        . # . # .
+        # . # # #
+        . # . # .
+        # . # # #
+        # # # # .
         `)
     music.playMelody("C5 A B G A F G E ", 120)
     music.playMelody("G B A G C5 B A B ", 120)
@@ -163,7 +180,7 @@ input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
         . . . . .
         . . . . .
-        # . # . .
+        # . # . #
         # . . . #
         . # # # .
         `)
@@ -193,6 +210,7 @@ input.onButtonPressed(Button.AB, function () {
         `)
     music.playTone(294, music.beat(BeatFraction.Whole))
     serial.redirectToUSB()
+    basic.clearScreen()
 })
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
@@ -296,26 +314,42 @@ basic.showLeds(`
     . . . . .
     `)
 basic.showLeds(`
-    . # # # .
-    . # . # .
-    . # # # .
-    . # . # .
-    . # . # .
-    `)
-basic.showLeds(`
-    . . # . .
     . . . . .
-    . . # . .
-    . . # . .
-    . . # . .
+    # # # . #
+    # . # . .
+    # # # . #
+    # . # . #
     `)
 basic.showLeds(`
     . . . . .
+    # . . . #
+    # # # . .
+    # . # . #
+    # . # . #
+    `)
+basic.showLeds(`
+    . . . . .
     . . . . .
     . . . . .
     . . . . .
     . . . . .
     `)
+led.setBrightness(255)
+basic.showLeds(`
+    # . . . #
+    . # . # .
+    . . # . .
+    . # . # .
+    # . . . #
+    `)
+basic.showLeds(`
+    . . # # .
+    # . # . #
+    . # # # .
+    # . # . #
+    . . # # .
+    `)
+basic.clearScreen()
 basic.forever(function () {
 	
 })
